@@ -1,14 +1,14 @@
 from collections import deque
 
-# N, M ÀÔ·Â¹ÙÀ½
+# N, M ì…ë ¥ë°›ìŒ
 N, M = map(int, input().split())
 
-# graph ÀÔ·Â¹ŞÀ½
+# graph 
 graph = []
 for i in range(N):
     graph.append(list(map(int, input())))
 
-# ¹æÇâ
+# Â¹Ã¦Ã‡Ã¢
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
