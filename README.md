@@ -5,8 +5,9 @@
 ## 2. 구현
 
 ## 3. DFS
- - 이론적인 내용
-<img src = "pystudy/res/graph.png">
+ - 그래프
+<img src = "pystudy/res/graph.PNG">
+ - 소스코드
  
  ## 4. BFS
 
