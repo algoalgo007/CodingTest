@@ -6,7 +6,7 @@
 
 ## 3. DFS
  - 이론적인 내용
-<img src = "res/graph.png">
+<img src = "pystudy/res/graph.png">
  
  ## 4. BFS
 
