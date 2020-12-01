@@ -8,7 +8,7 @@
  - 그래프
 <img src = "pystudy/res/graph.PNG">
 
-- DFS소스코드: ([Python 코드](/개념/DFS.py))
+- DFS소스코드: ([Python 코드](/pystudy/개념/DFS.py))
 
  
  ## 4. BFS
