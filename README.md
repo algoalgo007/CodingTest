@@ -4,10 +4,12 @@
 
 ## 2. 구현
 
-## 3. DFS
+## 3. DFS / BFS
  - 그래프
 <img src = "pystudy/res/graph.PNG">
- - 소스코드
+
+- DFS소스코드: ([Python 코드](/개념/DFS.py))
+
  
  ## 4. BFS
 
