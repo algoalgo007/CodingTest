@@ -9,6 +9,7 @@
 <img src = "pystudy/res/graph.PNG">
 
 - DFS소스코드: ([Python 코드](/pystudy/개념/DFS.py))
+  - 출력결과: 1, 2, 9, 3, 4, 7, 6, 8, 5
 
  
  ## 4. BFS
