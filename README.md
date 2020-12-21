@@ -23,7 +23,7 @@
   - str1 = sunday, str2 = saturday로 가정 교체, 삽입, 삭제 3가지의 연산이 가능하다면 <br>
     두 문자가 같은 경우: 왼쪽 위에 해당하는 수를 그대로 대입. <br>
     두 문자가 다른 경우: 왼쪽(삽입), 위쪽(삭제), 왼쪽 위(교체)중 최소의 값에 1을 더해 대입. <br>
-  <img src = "pystudy/res/Edit_Distance.PNG">
+  <img src = "pystudy/res/Edt_Distance.PNG">
   
 
 ## 7. 최단경로
