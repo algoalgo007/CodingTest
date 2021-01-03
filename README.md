@@ -1,7 +1,15 @@
 # CodingTest
 
 ## 1. 그리디
-
+ - 만들 수 없는 금액: ([Python 코드](/pystudy/Exercise/Greedy/Q04.py))
+ 
+   - 동전 개수: 5, 동전의 종류 3, 2, 1, 1, 9 일때 target을 1로 지정, 동전의 종류 오름차순<br>
+     target이 첫번째 원소 1보다 작지 않으므로 target += 첫번째 원소. target이 2가 됨. <br>
+     target이 두번째 원소 1보다 작지 않으므로 target += 두번쨰 원소. target이 3이 됨. <br>
+     target이 세번째 원소 2보다 작지 않으므로 target += 세번째 원소. target이 5가 됨. <br>
+     target이 네번째 원소 3보다 작지 않으므로 target += 네번째 원소. target이 8이 됨. <br>
+     target이 다섯번째 원소 9보다 작으므로 target 8을 반환함. 
+     
 ## 2. 구현
 
 ## 3. DFS / BFS
