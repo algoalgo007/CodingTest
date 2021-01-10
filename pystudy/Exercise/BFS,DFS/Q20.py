@@ -1,69 +1,55 @@
-from itertools import combinations
 from collections import deque
+from itertools import combinations
 import copy
 
-N = int(input())
+n = int(input())
 graph = []
 teacher = []
 blank = []
 
-for i in range(N):
-  graph.append(list(input().split())) 
-  for j in range(N):
+dx = [-1, 1, 0, 0]
+dy = [0, 0, -1, 1]
+
+for i in range(n):
+  graph.append(list(input().split()))
+  for j in range(n):
     if graph[i][j] == 'T':
       teacher.append((i, j))
-    elif graph[i][j] == 'X':
+    elif graph[i][j] == "X":
       blank.append((i, j))
 
-def dir(x, y, dir): # 학생 찾은 경우 True 반환 못찾은경우 False반환
-  if dir == 0: # 상
-    while x >= 1:
-      x -= 1
-      if graph[x][y] == 'S':
-        return True
-      elif graph[x][y] == 'O':
-        return False
-  elif dir == 1: # 하
-    while x < N-1:
-      x += 1
-      if graph[x][y] == 'S':
-        return True
-      elif graph[x][y] == 'O':
-        return False
-  elif dir == 2: # 좌
-    while y >= 1:
-      y -= 1
-      if graph[x][y] == 'S':
-        return True
-      elif graph[x][y] == 'O':
-        return False
-  elif dir == 3: # 우
-    while y < N-1:
-      y += 1
-      if graph[x][y] == 'S':
-        return True
-      elif graph[x][y] == 'O':
-        return False
-  return False
-
-def process():
-  for x, y in teacher:
+def bfs(): # 학생 찾으면 False 반환
+  q = deque(teacher)
+  test_graph = copy.deepcopy(graph)
+  while q:
+    x, y = q.popleft()
     for i in range(4):
-      if dir(x, y, i):
-        return True # 학생 찾은 경우
-  return False # 학생 못 찾은 경우
+      temp_x, temp_y = x, y
+      while True:
+        nx = temp_x + dx[i]
+        ny = temp_y + dy[i]
+        if 0 <= nx < n and 0 <= ny < n:
+          if test_graph[nx][ny] == 'X':
+            test_graph[nx][ny] = 'T'
+          elif test_graph[nx][ny] == 'S':
+            return False
+          elif test_graph[nx][ny] == 'O':
+            break
+          temp_x, temp_y = nx, ny
+        else:
+          break
+  return True
 
 check = False
-for data in combinations(blank, 3):
-  for x, y, in data:
+for data in list(combinations(blank, 3)):
+  for x, y in data:
     graph[x][y] = 'O'
-  if process() == False:
-    check = True # 못찾은 경우
+  if bfs():
+    check = True
     break
-  for x, y, in data:
+  for x, y in data:
     graph[x][y] = 'X'
     
-
 if check:
   print("YES")
 else:
