@@ -28,9 +28,10 @@
 
 ## 6. 다이나믹 프로그래밍
  - 가장 긴 증가하는 부분 수열: ([Python 코드](/pystudy/Exercise/다이나믹프로그래밍/Q34.py))
-    백준 문제 : https://www.acmicpc.net/problem/18353
+    - 백준 문제(18353번) : https://www.acmicpc.net/problem/18353
     
 - 편집 거리 알고리즘: ([Python 코드](/pystudy/개념/편집거리.py))
+  - 백준 문제(15483) : https://www.acmicpc.net/problem/15483
   - str1 = sunday, str2 = saturday로 가정 교체, 삽입, 삭제 3가지의 연산이 가능하다면 <br>
     두 문자가 같은 경우: 왼쪽 위에 해당하는 수를 그대로 대입. <br>
     두 문자가 다른 경우: 왼쪽(삽입), 위쪽(삭제), 왼쪽 위(교체)중 최소의 값에 1을 더해 대입. <br>
