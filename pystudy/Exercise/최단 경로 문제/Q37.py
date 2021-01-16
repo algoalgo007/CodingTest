@@ -6,7 +6,7 @@ graph = [[INF] * (1+n) for _ in range(1+n)]
 
 for _ in range(m):
   a, b, c = map(int, input().split()) 
-  if c < graph[a][b]:
+  if c < graph[a][b]: # 시작 도시와 도착 도시를 연결하는 노선이 하나가 아닐 수 있으므로 최소의 값만 
     graph[a][b] = c
 
 for i in range(1, 1+n):
