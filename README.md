@@ -48,6 +48,8 @@
   <img src = "pystudy/res/floyd.PNG">
   
 ## 8. 그래프 
+<img src = "pystudy/res/서로소.PNG">
+
 - 서로소 집합 알고리즘(경로 압축기법 적용) ([Python 코드](/pystudy/개념/서로소집합.py))
 
 ## 9. 기타 
