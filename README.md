@@ -54,3 +54,5 @@
 
 ## 9. 기타 
 - bisect를 이용한 이진탐색: ([Python 코드](/pystudy/개념/bisect.py))
+- 소수판별 알고리즘 : ([Python 코드](/pystudy/개념/prime.py))
+  - 소수판별의 경우 제곱근까지만 확인을 해 주어도 됨
