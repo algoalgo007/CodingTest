@@ -1,3 +1,12 @@
+/*
+[INPUT]
+3 3
+1 2
+1 3
+2 3
+[OUTPUT]
+사이클이 발생했습니다.
+ */
 import java.util.*;
 import java.io.*;
 
